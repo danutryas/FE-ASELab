@@ -1,5 +1,11 @@
+import Side from './components/Side';
+
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <Side />
+    </div>
+  );
 }
 
 export default App;
