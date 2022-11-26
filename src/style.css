@@ -21,6 +21,30 @@
   display: block;
 }
 
+.Button {
+  background: #f15a24;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.Button:hover {
+  background: #fff;
+  border: 1px solid rgb(241, 90, 36);
+  color: #f15a24;
+}
+
+input:focus {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border: 2px solid rgb(241, 90, 36);
+}
+
+#simple-search::placeholder {
+  text-align: center;
+  font-size: 16px;
+}
+
 @media (min-width: 768px) {
   #sidebar {
     --tw-translate-x: 0;
