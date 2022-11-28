@@ -1,9 +1,10 @@
 import '../style.css';
 import Searchbar from './Searchbar';
+import Carousel from './Carousel';
 
 const Side = () => {
   return (
-    <div className="relative min-h-screen md:flex" data-dev-hint="container">
+    <div className="relative min-h-screen md:flex" data-dev-hint="container" id="bg">
       <input type="checkbox" id="menu-open" className="hidden" />
 
       <label for="menu-open" id="mobile-menu-button" className="fixed right-2 bottom-2 shadow-lg rounded-full p-2 bg-gray-100 text-gray-600 md:hidden" data-dev-hint="floating action button">
@@ -17,7 +18,7 @@ const Side = () => {
 
       <aside
         id="sidebar"
-        className="bg-gray-50  md:w-64 space-y-6 pt-5 px-0 absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out  md:flex md:flex-col md:justify-between overflow-y-auto"
+        className="bg-white  md:w-64 space-y-6 pt-5 px-0 absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out  md:flex md:flex-col md:justify-between overflow-y-auto"
         data-dev-hint="sidebar; px-0 for frameless; px-2 for visually inset the navigation"
       >
         <div className="flex flex-col px-3 pb-2" data-dev-hint="optional div for having an extra footer navigation">
@@ -38,7 +39,7 @@ const Side = () => {
               </button>
               <span className="flex-1 ml-3 whitespace-nowrap">ASE Member</span>
             </a>
-            <a href="#" className="flex items-center py-2 pl-7 p-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
+            <a href="#" className="flex items-center py-2 pl-7 p-2 my-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
               <button className="bg-transparent border border-gray-500 rounded-lg border-2 p-1.5">
                 <svg
                   className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
@@ -58,7 +59,7 @@ const Side = () => {
               </button>
               <span className="flex-1 ml-3 whitespace-nowrap">ASE Research</span>
             </a>
-            <a href="#" className="flex items-center py-2 pl-7 p-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
+            <a href="#" className="flex items-center py-2 pl-7 p-2 my-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
               <button className="bg-transparent border border-gray-500 rounded-lg border-2 p-1.5">
                 <svg
                   className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
@@ -78,7 +79,7 @@ const Side = () => {
               </button>
               <span className="flex-1 ml-3 whitespace-nowrap">ASE Product</span>
             </a>
-            <a href="#" className="flex items-center py-2 pl-7 p-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
+            <a href="#" className="flex items-center py-2 pl-7 my-2 p-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
               <button className="bg-transparent border border-gray-500 rounded-lg border-2 p-1.5">
                 <svg
                   className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
@@ -98,7 +99,7 @@ const Side = () => {
               </button>
               <span className="flex-1 ml-3 whitespace-nowrap">ASE Division</span>
             </a>
-            <a href="#" className="flex items-center py-2 pl-7 p-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
+            <a href="#" className="flex items-center py-2 my-2 pl-7 p-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
               <button className="bg-transparent border border-gray-500 rounded-lg border-2 p-1.5">
                 <svg
                   className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
@@ -118,7 +119,7 @@ const Side = () => {
               </button>
               <span className="flex-1 ml-3 whitespace-nowrap">ASE Event</span>
             </a>
-            <a href="#" className="flex items-center py-2 pl-7 p-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
+            <a href="#" className="flex items-center py-2 my-2 pl-7 p-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
               <button className="bg-transparent border border-gray-500 rounded-lg border-2 p-1.5">
                 <svg
                   className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
@@ -148,6 +149,24 @@ const Side = () => {
             <div className="h-auto">
               <Searchbar />
             </div>
+          </div>
+          <div className="px-4 py-6 sm:px-0">
+            <div className="h-96"></div>
+          </div>
+          <div className="px-4 py-6 sm:px-0">
+            <div className="h-96"></div>
+          </div>
+          <div className="px-4 py-6 sm:px-0">
+            <div className="h-96"></div>
+          </div>
+          <div className="px-4 py-6 sm:px-0">
+            <div className="h-96"></div>
+          </div>
+          <div className="px-4 py-6 sm:px-0">
+            <div className="h-96"></div>
+          </div>
+          <div className="px-4 py-6 sm:px-0">
+            <div className="h-96"></div>
           </div>
         </div>
       </main>
