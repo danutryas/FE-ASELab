@@ -21,6 +21,17 @@
   display: block;
 }
 
+#bg {
+  background-image: url('/public/bg/wave.png'), url('/public/bg/wave2.png'), url('/public/bg/wave3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top, center, bottom;
+}
+
+body {
+  background-color: rgb(254, 234, 210);
+}
+
 .Button {
   background: #f15a24;
   color: #fff;
@@ -43,6 +54,8 @@ input:focus {
 #simple-search::placeholder {
   text-align: center;
   font-size: 16px;
+  color: #a3714f;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
