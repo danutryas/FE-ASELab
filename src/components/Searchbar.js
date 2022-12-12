@@ -16,7 +16,7 @@ const Searchbar = () => {
         </div>
         <input type="text" id="simple-search" className="bg-transparent border text-gray-900 text-sm rounded-lg border-2 block w-full pl-10 p-2.5" style={{ borderColor: '#a3714f' }} placeholder="Search more" />
       </div>
-      <button className="Button p-2.5 w-52 ml-2 text-sm font-medium drop-shadow-lg">Recruitment</button>
+      <button className="Button p-2.5 w-52 ml-4 text-sm font-medium drop-shadow-lg">Recruitment</button>
     </form>
   );
 };
