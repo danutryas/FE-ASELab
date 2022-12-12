@@ -157,12 +157,27 @@ const Side = () => {
                 <EventCard eventTag="Competition" eventType="Competitive Event" eventName="RPLGDC Hackathon 2022" date="26 Nov 2022 - 26 Nov 2022" />
                 <EventCard eventTag="Competition" eventType="Competitive Event" eventName="RPLGDC GameJam 2022" date="26 Nov 2022 - 26 Nov 2022" />
                 <EventCard eventTag="Open Recruitment" eventType="Virtual Event" eventName="Open Recruitment ASE Laboratory" date="26 Nov 2022 - 26 Nov 2022" />
+                <EventCard eventTag="Open Recruitment" eventType="Virtual Event" eventName="Open Recruitment ASE Laboratory" date="26 Nov 2022 - 26 Nov 2022" />
+                <EventCard eventTag="Open Recruitment" eventType="Virtual Event" eventName="Open Recruitment ASE Laboratory" date="26 Nov 2022 - 26 Nov 2022" />
+                <EventCard eventTag="Open Recruitment" eventType="Virtual Event" eventName="Open Recruitment ASE Laboratory" date="26 Nov 2022 - 26 Nov 2022" />
+                <EventCard eventTag="Open Recruitment" eventType="Virtual Event" eventName="Open Recruitment ASE Laboratory" date="26 Nov 2022 - 26 Nov 2022" />
+                <EventCard eventTag="Open Recruitment" eventType="Virtual Event" eventName="Open Recruitment ASE Laboratory" date="26 Nov 2022 - 26 Nov 2022" />
+                <EventCard eventTag="Open Recruitment" eventType="Virtual Event" eventName="Open Recruitment ASE Laboratory" date="26 Nov 2022 - 26 Nov 2022" />
+                <EventCard eventTag="Open Recruitment" eventType="Virtual Event" eventName="Open Recruitment ASE Laboratory" date="26 Nov 2022 - 26 Nov 2022" />
               </Slider>
             </div>
           </div>
           <div className="px-4 py-6 sm:px-0">
             <div className="h-auto">
               <Slider title="Our Laboratory Members">
+                <MemberCard gen="6" name="Danu Tryas" division="Frontend Engineer"/>
+                <MemberCard gen="6" name="Danu Tryas" division="Frontend Engineer"/>
+                <MemberCard gen="6" name="Danu Tryas" division="Frontend Engineer"/>
+                <MemberCard gen="6" name="Danu Tryas" division="Frontend Engineer"/>
+                <MemberCard gen="6" name="Danu Tryas" division="Frontend Engineer"/>
+                <MemberCard gen="6" name="Danu Tryas" division="Frontend Engineer"/>
+                <MemberCard gen="6" name="Danu Tryas" division="Frontend Engineer"/>
+                <MemberCard gen="6" name="Danu Tryas" division="Frontend Engineer"/>
                 <MemberCard gen="6" name="Danu Tryas" division="Frontend Engineer"/>
                 <MemberCard gen="6" name="Danu Tryas" division="Frontend Engineer"/>
               </Slider>
