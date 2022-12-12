@@ -4,10 +4,10 @@ import Searchbar from './Searchbar';
 import Slider from './Slider';
 import events from '../events.json';
 import members from '../members.json';
+import DivisionSection from './OurDivision';
 
 
 const Side = () => {
-  console.log(events)
   return (
     <div className="relative min-h-screen md:flex" data-dev-hint="container" id="bg">
       <input type="checkbox" id="menu-open" className="hidden" />
@@ -159,7 +159,7 @@ const Side = () => {
             <div className="h-96 ">
             </div>
           </div>
-          <div className="px-4 py-6 sm:px-0">
+          <div className="px-4 py-12 sm:px-0">
             <div className="h-auto">
             <Slider title="Our Events ">
                 {
@@ -170,7 +170,7 @@ const Side = () => {
               </Slider>
             </div>
           </div>
-          <div className="px-4 py-6 sm:px-0">
+          <div className="px-4 py-12 sm:px-0">
             <div className="h-auto">
             <Slider title="Our Laboratory Members">
                 {
@@ -181,14 +181,18 @@ const Side = () => {
               </Slider>
             </div>
           </div>
-          <div className="px-4 py-6 sm:px-0">
-            <div className="h-96"></div>
+          <div className="px-4 py-12 sm:px-0">
+            <div className="h-auto">
+              <DivisionSection />
+            </div>
           </div>
-          <div className="px-4 py-6 sm:px-0">
-            <div className="h-96"></div>
-          </div>
-          <div className="px-4 py-6 sm:px-0">
-            <div className="h-96"></div>
+          <div className="px-4 py-12 sm:px-0">
+            <div className="h-auto">
+              <div className="flex flex-col items-center gap-6">
+                <h1 className='text-4xl font-medium text-center' style={{color:"#353535"}}>Join with us for more technology update</h1>
+                <h2 className='text-2xl font-medium text-center' style={{color:"#353535"}}>Join now and make yourself the best digital talent in Southeast Asia</h2>
+              </div>
+            </div>
           </div>
         </div>
       </main>

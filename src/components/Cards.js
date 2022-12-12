@@ -1,4 +1,4 @@
-function MemberCard({division,name,gen}) {
+const MemberCard = ({division,name,gen}) => {
 
     return ( 
         <div className="rounded-lg bg-white w-72 inline-block mx-5" >
@@ -14,7 +14,7 @@ function MemberCard({division,name,gen}) {
     );
 }
 
-function EventCard({eventType,eventName,date,eventTag}) {
+const EventCard = ({eventType,eventName,date,eventTag}) => {
 
     return ( 
         <div className="rounded-lg bg-white w-72 inline-block mx-5" >
