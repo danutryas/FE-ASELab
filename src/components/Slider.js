@@ -3,16 +3,11 @@ import { useRef } from "react";
 function Slider({title,children}) {
     const slider = useRef()
     
-    const slideLeft= () => slider.current.scrollLeft = slider.current.scrollLeft - 600;
-    
-    const slideRight = () => {
-    console.log(slider.current.scrollLeft)
-
-        slider.current.scrollLeft = slider.current.scrollLeft + 600;
-    } 
+    const slideLeft= () => slider.current.scrollLeft = slider.current.scrollLeft - 656;
+    const slideRight = () => slider.current.scrollLeft = slider.current.scrollLeft + 656; 
 
     return ( 
-        <div className="flex gap-8 flex-col">
+        <div className="flex gap-7 flex-col">
             <div className="flex justify-between">
                 <h2 className="font-medium text-4xl leading-10" style={{color : "#343434"}}>{title}</h2>
                 <div className="flex gap-2">
@@ -28,8 +23,8 @@ function Slider({title,children}) {
                     </button>
                 </div>
             </div>
-            <div className="w-full">
-                <div className="no-scrollbar whitespace-nowrap overflow-x-auto scroll-smooth " ref={slider}>
+            <div className="w-full ">
+                <div className="no-scrollbar whitespace-nowrap overflow-x-auto scroll-smooth p-1 shadow-inner" ref={slider}>
                     {children}
                 </div>
             </div>
