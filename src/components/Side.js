@@ -2,8 +2,12 @@ import '../style.css';
 import {EventCard, MemberCard} from './Cards';
 import Searchbar from './Searchbar';
 import Slider from './Slider';
+import events from '../events.json';
+import members from '../members.json';
+
 
 const Side = () => {
+  console.log(events)
   return (
     <div className="relative min-h-screen md:flex" data-dev-hint="container" id="bg">
       <input type="checkbox" id="menu-open" className="hidden" />
@@ -152,24 +156,29 @@ const Side = () => {
             </div>
           </div>
           <div className="px-4 py-6 sm:px-0">
-            <div className="h-auto ">
+            <div className="h-96 ">
+            </div>
+          </div>
+          <div className="px-4 py-6 sm:px-0">
+            <div className="h-auto">
             <Slider title="Our Events ">
-                <EventCard eventTag="Competition" eventType="Competitive Event" eventName="RPLGDC Hackathon 2022" date="26 Nov 2022 - 26 Nov 2022" />
-                <EventCard eventTag="Competition" eventType="Competitive Event" eventName="RPLGDC GameJam 2022" date="26 Nov 2022 - 26 Nov 2022" />
-                <EventCard eventTag="Open Recruitment" eventType="Virtual Event" eventName="Open Recruitment ASE Laboratory" date="26 Nov 2022 - 26 Nov 2022" />
+                {
+                  events.map((event) => {
+                    return <EventCard eventTag={event.tag} eventType={event.type} eventName={event.name} date={event.date} />
+                  })
+                }
               </Slider>
             </div>
           </div>
           <div className="px-4 py-6 sm:px-0">
             <div className="h-auto">
-              <Slider title="Our Laboratory Members">
-                <MemberCard gen="6" name="Danu Tryas" division="Frontend Engineer"/>
-                <MemberCard gen="6" name="Danu Tryas" division="Frontend Engineer"/>
+            <Slider title="Our Laboratory Members">
+                {
+                  members.map((member) => {
+                    return <MemberCard division={member.division} name={member.name} gen={member.gen} />
+                  })
+                }
               </Slider>
-            </div>
-          </div>
-          <div className="px-4 py-6 sm:px-0">
-            <div className="h-96">
             </div>
           </div>
           <div className="px-4 py-6 sm:px-0">
