@@ -1,4 +1,4 @@
-import { Routes,Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import AboutUsPage from './pages/AboutUs';
 import Homepage from './pages/Homepage';
 import MemberPage from './pages/Member';
@@ -6,6 +6,8 @@ import ProductPage from './pages/Product';
 import ResearchPage from './pages/Research';
 import DivisionPage from './pages/Division';
 import EventPage from './pages/Event';
+import Footer from './components/Footer';
+
 import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
@@ -21,7 +23,9 @@ function App() {
           <Route path='/about' element={<AboutUsPage />} />
         {/* <Side /> */}
         </Routes>
+        <Footer />
       </ScrollToTop>
+
     </div>
   );
 }
