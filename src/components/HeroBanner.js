@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HeroBanner = (e) => {
 
     return(
@@ -7,7 +9,9 @@ const HeroBanner = (e) => {
                     <h1 className="font-medium text-4xl w-11/12 leading-tight" style={{color: "#343434"}}>Advanced Software Engineering Telkom University</h1>
                     <p className="text-2xl w-11/12" style={{color: "#343434"}} >Advanced Software Engineering Telkom University is a research laboratory that focuses on software design and development</p>
                     <div className="w-fit ">
-                        <button className="Button py-3 px-5 text-xl font-medium drop-shadow-lg leading-7" >More about us</button>
+                        <Link to="/about" className="Button py-3 px-5 text-xl font-medium drop-shadow-lg leading-7 no-underline" >
+                            More about us
+                        </Link>
                     </div>
                 </div>
                 <div className="flex-1">
