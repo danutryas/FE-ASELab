@@ -27,7 +27,7 @@ const DivisionSection = () => {
                 </div>
             </div>
             <div className="mx-auto">
-                <button className="Button py-4 px-5 text-2xl font-medium drop-shadow-lg leading-7">See detail</button>
+                <button className="Button py-3 px-5 text-xl font-medium drop-shadow-lg leading-7">See detail</button>
             </div>
         </div>
     )
