@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const DivisionSection = () => {
 
     return(
@@ -27,7 +29,9 @@ const DivisionSection = () => {
                 </div>
             </div>
             <div className="mx-auto">
-                <button className="Button py-3 px-5 text-xl font-medium drop-shadow-lg leading-7">See detail</button>
+                <Link to="/division" className="Button py-3 px-5 text-xl font-medium drop-shadow-lg leading-7 no-underline">
+                    See detail
+                </Link>
             </div>
         </div>
     )

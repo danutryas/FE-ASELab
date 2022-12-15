@@ -8,20 +8,24 @@ import DivisionPage from './pages/Division';
 import EventPage from './pages/Event';
 import Footer from './components/Footer';
 
+import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
     <div>
-      <Routes>
-        <Route path="/" exact element={<Homepage />} />
-        <Route path="/product" element={<ProductPage />} />
-        <Route path="/research" element={<ResearchPage />} />
-        <Route path="/division" element={<DivisionPage />} />
-        <Route path="/event" element={<EventPage />} />
-        <Route path="/member" element={<MemberPage />} />
-        <Route path="/about" element={<AboutUsPage />} />
+      <ScrollToTop>
+        <Routes>
+          <Route path="/" exact element={<Homepage />} />
+          <Route path='/product' element={<ProductPage />} />
+          <Route path='/research' element={<ResearchPage />} />
+          <Route path='/division' element={<DivisionPage />} />
+          <Route path='/event' element={<EventPage />} />
+          <Route path='/member' element={<MemberPage />} />
+          <Route path='/about' element={<AboutUsPage />} />
         {/* <Side /> */}
-      </Routes>
-      <Footer />
+        </Routes>
+        <Footer />
+      </ScrollToTop>
+
     </div>
   );
 }
