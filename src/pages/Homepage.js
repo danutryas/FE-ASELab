@@ -177,7 +177,7 @@ const Homepage = () => {
             <Slider title="Our Laboratory Members">
                 {
                   members.map((member,index) => {
-                    return <MemberCard key={index} division={member.division} name={member.name} gen={member.gen} />
+                    return <MemberCard key={index} tag={member.division} name={member.name} gen={member.gen} />
                   })
                 }
               </Slider>
