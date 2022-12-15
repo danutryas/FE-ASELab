@@ -13,7 +13,7 @@ const HeroBanner = (e) => {
               <p className="text-base mb-9">
                 Advanced Software Engineering Telkom <br /> University is a research laboratory that <br /> focuses on software design and <br /> development
               </p>
-              <a href="#" className="Button bg-purple-800 p-2.5 text-white font-medium no-underline text-sm rounded drop-shadow-md">
+              <a href="/about" className="Button bg-purple-800 p-2.5 text-white font-medium no-underline text-sm rounded drop-shadow-md">
                 More about us
               </a>
             </div>

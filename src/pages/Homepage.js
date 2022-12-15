@@ -36,7 +36,7 @@ const Homepage = () => {
             <a href="#" className="flex items-center px-1 pt-1 pb-3  text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-100 pointer-events-none">
               <span className="flex-1 ml-3 whitespace-nowrap">Highlight</span>
             </a>
-            <a href="#" className="flex items-center py-2 pl-7 p-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
+            <Link to="/member" className="flex items-center py-2 pl-7 p-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
               <button className="bg-transparent border border-gray-500 rounded-lg border-2 p-1.5">
                 <svg className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   {' '}
@@ -44,8 +44,8 @@ const Homepage = () => {
                 </svg>
               </button>
               <span className="flex-1 ml-3 whitespace-nowrap">ASE Member</span>
-            </a>
-            <a href="#" className="flex items-center py-2 pl-7 p-2 my-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
+            </Link>
+            <Link to="/research" className="flex items-center py-2 pl-7 p-2 my-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
               <button className="bg-transparent border border-gray-500 rounded-lg border-2 p-1.5">
                 <svg
                   className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
@@ -64,8 +64,8 @@ const Homepage = () => {
                 </svg>
               </button>
               <span className="flex-1 ml-3 whitespace-nowrap ">ASE Research</span>
-            </a>
-            <a href="#" className="flex items-center py-2 pl-7 p-2 my-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
+            </Link>
+            <Link to="/product" className="flex items-center py-2 pl-7 p-2 my-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
               <button className="bg-transparent border border-gray-500 rounded-lg border-2 p-1.5">
                 <svg
                   className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
@@ -84,8 +84,8 @@ const Homepage = () => {
                 </svg>
               </button>
               <span className="flex-1 ml-3 whitespace-nowrap">ASE Product</span>
-            </a>
-            <a href="#" className="flex items-center py-2 pl-7 my-2 p-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
+            </Link>
+            <Link to="/division" className="flex items-center py-2 pl-7 my-2 p-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
               <button className="bg-transparent border border-gray-500 rounded-lg border-2 p-1.5">
                 <svg
                   className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
@@ -104,8 +104,8 @@ const Homepage = () => {
                 </svg>
               </button>
               <span className="flex-1 ml-3 whitespace-nowrap">ASE Division</span>
-            </a>
-            <a href="#" className="flex items-center py-2 my-2 pl-7 p-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
+            </Link>
+            <Link to="/event" className="flex items-center py-2 my-2 pl-7 p-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
               <button className="bg-transparent border border-gray-500 rounded-lg border-2 p-1.5">
                 <svg
                   className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
@@ -124,7 +124,7 @@ const Homepage = () => {
                 </svg>
               </button>
               <span className="flex-1 ml-3 whitespace-nowrap">ASE Event</span>
-            </a>
+            </Link>
             <Link to="/about" className="flex items-center py-2 my-2 pl-7 p-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
               <button className="bg-transparent border border-gray-500 rounded-lg border-2 p-1.5">
                 <svg
