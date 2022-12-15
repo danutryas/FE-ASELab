@@ -2,7 +2,7 @@ import { useRef } from 'react';
 
 function Slider({ title, children }) {
   const slider = useRef();
-
+  
   const slideLeft = () => (slider.current.scrollLeft = slider.current.scrollLeft - 656);
   const slideRight = () => (slider.current.scrollLeft = slider.current.scrollLeft + 656);
 
