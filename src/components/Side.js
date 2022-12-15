@@ -1,18 +1,16 @@
 import '../style.css';
-import { EventCard, MemberCard } from '../components/Cards';
-import Searchbar from '../components/Searchbar';
-import Slider from '../components/Slider';
+import { EventCard, MemberCard } from './Cards';
+import Searchbar from './Searchbar';
+import Slider from './Slider';
 import events from '../events.json';
 import members from '../members.json';
-import DivisionSection from '../components/OurDivision';
-import HeroBanner from '../components/HeroBanner';
-import { Link } from 'react-router-dom';
-import Footer from '../components/Footer';
+import DivisionSection from './OurDivision';
 
-const Homepage = () => {
+const Side = () => {
   return (
     <div className="relative min-h-screen md:flex" data-dev-hint="container" id="bg">
       <input type="checkbox" id="menu-open" className="hidden" />
+
       <label for="menu-open" id="mobile-menu-button" className="fixed right-2 bottom-2 shadow-lg rounded-full p-2 bg-gray-100 text-gray-600 md:hidden" data-dev-hint="floating action button">
         <svg id="menu-open-icon" className="h-6 w-6 transition duration-200 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -125,7 +123,7 @@ const Homepage = () => {
               </button>
               <span className="flex-1 ml-3 whitespace-nowrap">ASE Event</span>
             </a>
-            <Link to="/about" className="flex items-center py-2 my-2 pl-7 p-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
+            <a href="#" className="flex items-center py-2 my-2 pl-7 p-2 text-base font-medium text-gray-500 no-underline rounded-lg hover:bg-gray-200">
               <button className="bg-transparent border border-gray-500 rounded-lg border-2 p-1.5">
                 <svg
                   className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
@@ -144,7 +142,7 @@ const Homepage = () => {
                 </svg>
               </button>
               <span className="flex-1 ml-3 whitespace-nowrap">About Us</span>
-            </Link>
+            </a>
           </nav>
         </div>
       </aside>
@@ -157,26 +155,18 @@ const Homepage = () => {
             </div>
           </div>
           <div className="px-4 py-6 sm:px-0">
-            <div className="h-auto ">
-              <HeroBanner />
-            </div>
+            <div className="h-96 "></div>
+          </div>
+          <div className="px-4 py-12 sm:px-0">
+            <div className="h-auto"></div>
           </div>
           <div className="px-4 py-12 sm:px-0">
             <div className="h-auto">
-              <Slider title="Our Events ">
-                {events.map((event, index) => {
-                  return <EventCard key={index} eventTag={event.tag} eventType={event.type} eventName={event.name} date={event.date} />;
+              {/* <Slider title="Our Laboratory Members">
+                {members.map((member) => {
+                  return <MemberCard division={member.division} name={member.name} gen={member.gen} />;
                 })}
-              </Slider>
-            </div>
-          </div>
-          <div className="px-4 py-12 sm:px-0">
-            <div className="h-auto">
-              <Slider title="Our Laboratory Members">
-                {members.map((member, index) => {
-                  return <MemberCard key={index} tag={member.division} name={member.name} gen={member.gen} />;
-                })}
-              </Slider>
+              </Slider> */}
             </div>
           </div>
           <div className="px-4 py-12 sm:px-0">
@@ -202,4 +192,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Side;
