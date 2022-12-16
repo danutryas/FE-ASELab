@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import { MemberCard } from '../components/Cards';
 import members from '../members.json';
@@ -9,6 +9,7 @@ const MemberPage = () => {
   const memberSection = useRef();
   const [aslabRender, setAslabRender] = useState([]);
   const [memberRender, setMemberRender] = useState([]);
+  const navigate = useNavigate()
 
   return (
     <div className="min-h-screen md:flex md:flex-col " data-dev-hint="container" id="bg">
@@ -16,13 +17,13 @@ const MemberPage = () => {
       <div className=" flex-1 p-6 lg:px-8" data-dev-hint="content">
         <div className="max-w-7xl mx-auto flex flex-col gap-14">
           <div className="pt-6" data-dev-hint="navigator">
-            <Link to="/" className="group w-max px-5 py-3 Button !border-4 !border-white flex gap-2 no-underline">
+            <button  className="group w-max px-5 py-3 Button !border-4 !border-white flex gap-2 no-underline" onClick={()=>navigate(-1)}>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path className="group-hover:stroke-orangeAccent-500" d="M19 12H5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 <path className="group-hover:stroke-orangeAccent-500" d="M12 19L5 12L12 5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <span className="font-medium text-xl ">Back</span>
-            </Link>
+            </button>
           </div>
           <div className="flex flex-col gap-16 w-full">
             <h1 className="text-black text-6xl font-bold text-center max-w-5xl mx-auto" style={{ color: '#353535' }}>
@@ -116,7 +117,9 @@ const MemberPagination = ({ memberRender, memberSection, setMemberRender }) => {
   }, []);
   return (
     <>
-      <div className={`grid grid-rows-${memberRender.length < 9 ? Math.ceil(memberRender.length / totalCardRenderPerRow) : 3} grid-cols-${totalCardRenderPerRow}  gap-14 justify-items-center`}>
+      <div className={`grid gap-14 justify-items-center`}
+        style={{gridTemplateColumns : `repeat(${totalCardRenderPerRow}, minmax(0, 1fr))`,gridTemplateRows : `repeat(${memberRender.length < 9 ? Math.ceil(memberRender.length / totalCardRenderPerRow) : 3}, minmax(0, 1fr))`}}
+      >
         {memberRender.map((member) => {
           return <MemberCard tag={member.role} name={member.name} gen={member.gen} />;
         })}
@@ -208,7 +211,9 @@ const AslabPagination = ({ aslabRender, aslabSection, setAslabRender }) => {
 
   return (
     <>
-      <div className={`grid  grid-cols-${aslabRender.length} justify-items-center`}>
+      <div className={`grid justify-items-center`}
+        style={{gridTemplateColumns : `repeat(${aslabRender.length}, minmax(0, 1fr))`}}
+      >
         {aslabRender.map((aslab) => {
           return <MemberCard tag={aslab.role} name={aslab.name} gen={aslab.gen} />;
         })}
