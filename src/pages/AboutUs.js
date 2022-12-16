@@ -1,20 +1,22 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 
 const AboutUsPage = () => {
+    const navigate = useNavigate()
+
     return(
         <div className="relative min-h-screen md:flex md:flex-col " data-dev-hint="container" id="bg">
             <Header type="link" />
             <div className=" flex-1 p-6 lg:px-8" data-dev-hint="content">
                 <div className="max-w-7xl mx-auto flex flex-col gap-14">
                     <div className="pt-6" data-dev-hint="navigator">
-                        <Link to="/" className="group w-max px-5 py-3 Button !border-4 !border-white flex gap-2 no-underline">
+                        <button className="group w-max px-5 py-3 Button !border-4 !border-white flex gap-2 no-underline" onClick={()=>navigate(-1)}>
                             <svg  width="24" height="24" viewBox="0 0 24 24" fill="none"  xmlns="http://www.w3.org/2000/svg">
                                 <path className="group-hover:stroke-orangeAccent-500" d="M19 12H5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                 <path className="group-hover:stroke-orangeAccent-500" d="M12 19L5 12L12 5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
                             <span className="font-medium text-xl ">Back</span>
-                        </Link>
+                        </button>
                     </div>
                     <div className="flex flex-col gap-12" >
                         <h1 className="text-black text-6xl font-bold text-center">About Us</h1>

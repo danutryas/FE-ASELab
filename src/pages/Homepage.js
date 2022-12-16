@@ -10,6 +10,10 @@ import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 
 const Homepage = () => {
+  const renderEvent = events.slice(0,3)
+  const renderMember = members.slice(0,3)
+
+
   return (
     <div className="relative min-h-screen md:flex" data-dev-hint="container" id="bg">
       <input type="checkbox" id="menu-open" className="hidden" />
@@ -174,7 +178,7 @@ const Homepage = () => {
           <div className="px-4 py-12 sm:px-0">
             <div className="h-auto">
               <Slider title="Our Events ">
-                {events.map((event, index) => {
+                {renderEvent.map((event, index) => {
                   return <EventCard key={index} eventTag={event.tag} eventType={event.type} eventName={event.name} date={event.date} />;
                 })}
               </Slider>
@@ -183,7 +187,7 @@ const Homepage = () => {
           <div className="px-4 py-12 sm:px-0">
             <div className="h-auto">
               <Slider title="Our Laboratory Members">
-                {members.map((member, index) => {
+                {renderMember.map((member, index) => {
                   return <MemberCard key={index} tag={member.division} name={member.name} gen={member.gen} />;
                 })}
               </Slider>

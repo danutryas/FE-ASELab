@@ -1,20 +1,62 @@
 [
   {
-    "tag": "Competition",
-    "type": "Competitive Event",
-    "name": "RPLGDC Hackathon 2022",
-    "date": "26 Nov 2022 - 26 Nov 2022"
+      "tag": "Competition",
+      "type": "Competitive Event",
+      "name":"RPLGDC Hackathon 2022",
+      "date" : "26 Nov 2022 - 26 Nov 2022"
   },
   {
-    "tag": "Open Recruitment",
-    "type": "Virtual Event",
-    "name": "Open Recruitment ASE Laboratory",
-    "date": "26 Nov 2022 - 26 Nov 2022"
+      "tag": "Open Recruitment",
+      "type": "Virtual Event",
+      "name":"Open Recruitment ASE Laboratory",
+      "date" : "26 Nov 2022 - 26 Nov 2022"
   },
   {
-    "tag": "Competition",
-    "type": "Competitive Event",
-    "name": "RPLGDC Hackathon 2022",
-    "date": "26 Nov 2022 - 26 Nov 2022"
+      "tag": "Competition",
+      "type": "Competitive Event",
+      "name":"RPLGDC Hackathon 2022",
+      "date" : "26 Nov 2022 - 26 Nov 2022"
+  },
+  {
+      "tag": "Open Recruitment",
+      "type": "Virtual Event",
+      "name":"Open Recruitment ASE Laboratory",
+      "date" : "26 Nov 2022 - 26 Nov 2022"
+  },
+  {
+      "tag": "Competition",
+      "type": "Competitive Event",
+      "name":"RPLGDC Hackathon 2022",
+      "date" : "26 Nov 2022 - 26 Nov 2022"
+  },
+  {
+      "tag": "Open Recruitment",
+      "type": "Virtual Event",
+      "name":"Open Recruitment ASE Laboratory",
+      "date" : "26 Nov 2022 - 26 Nov 2022"
+  },
+  {
+      "tag": "Competition",
+      "type": "Competitive Event",
+      "name":"RPLGDC Hackathon 2022",
+      "date" : "26 Nov 2022 - 26 Nov 2022"
+  },
+  {
+      "tag": "Open Recruitment",
+      "type": "Virtual Event",
+      "name":"Open Recruitment ASE Laboratory",
+      "date" : "26 Nov 2022 - 26 Nov 2022"
+  },
+  {
+      "tag": "Competition",
+      "type": "Competitive Event",
+      "name":"RPLGDC Hackathon 2022",
+      "date" : "26 Nov 2022 - 26 Nov 2022"
+  },
+  {
+      "tag": "Open Recruitment",
+      "type": "Virtual Event",
+      "name":"Open Recruitment ASE Laboratory",
+      "date" : "26 Nov 2022 - 26 Nov 2022"
   }
 ]
