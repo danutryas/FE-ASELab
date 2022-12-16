@@ -23,7 +23,7 @@ function App() {
           <Route path='/about' element={<AboutUsPage />} />
         {/* <Side /> */}
         </Routes>
-        <Footer />
+        <Footer  />
       </ScrollToTop>
 
     </div>
