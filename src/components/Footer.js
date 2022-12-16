@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="bg-gray-100 p-5 grid grid-cols-1 md:grid-cols-12 asui">
+    <div className="bg-gray-100 p-5 grid grid-cols-1 md:grid-cols-12 asui relative z-20">
       <div className="md:col-span-3 pb-2 md:mb-0">
         <a href="#" className="flex items-center mb-5 no-underline">
           <img src="/logoASE.png" alt="" className="ml-3 h-24 sm:h-24" />
